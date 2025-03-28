@@ -1,0 +1,183 @@
+/* Navigation */
+nav {
+    background: #1a2a6c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+}
+
+/* For better scrolling on mobile */
+@media (max-width: 768px) {
+    nav {
+        justify-content: flex-start;
+        padding: 1rem 0.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Header styling */
+h1 {
+    color: #1a2a6c;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Category sections */
+.movie-category {
+    margin-bottom: 3rem;
+}
+
+.movie-category h2 {
+    color: #1a2a6c;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #1a2a6c;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Movies grid */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Movie cards */
+.movie-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-info {
+    padding: 1.5rem;
+}
+
+.movie-info h3 {
+    color: #1a2a6c;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.director, .stars {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.synopsis {
+    color: #333;
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trailer {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Go to top button */
+.go-top-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.go-top {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a2a6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.go-top:hover {
+    background-color: #283d8a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.3rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .movie-category h2 {
+        font-size: 1.5rem;
+    }
+
+    .movie-info h3 {
+        font-size: 1.3rem;
+    }
+}

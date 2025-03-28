@@ -1,0 +1,90 @@
+/* Matcha-inspired color palette */
+:root {
+    --matcha-green: #A7C17D;
+    --dark-green: #6B8E23;
+    --light-green: #E6F4D7;
+    --cream: #FAF3E0;
+    --brown: #8B5A2B;
+    --text-color: #3D3D3D;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-green);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1 {
+    color: var(--dark-green);
+    font-size: 2em;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: var(--dark-green);
+}
+
+/* Navigation */
+nav a {
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--matcha-green);
+}
+
+/* Sections */
+div {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--cream);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h3 {
+    color: var(--dark-green);
+    font-size: 1.5em;
+    border-left: 5px solid var(--matcha-green);
+    padding-left: 10px;
+}
+
+/* Back to Top Link */
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--matcha-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--dark-green);
+}
+
+/* Home Link */
+a[href*="codepen"] {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: var(--brown);
+    font-weight: bold;
+    padding: 10px;
+}
+
+a[href*="codepen"]:hover {
+    color: var(--matcha-green);
+}

@@ -1,0 +1,167 @@
+/* Navigation */
+nav {
+    background: #1a2a6c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+}
+
+/* For better scrolling on mobile */
+@media (max-width: 768px) {
+    nav {
+        justify-content: flex-start;
+        padding: 1rem 0.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Header styling */
+h1 {
+    color: #1a2a6c;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Genre sections */
+.genre-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.genre-title {
+    color: #1a2a6c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #1a2a6c;
+    font-family: 'Playfair Display', serif;
+}
+
+.audio-info {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Audio player styling */
+.audio-player {
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.audio-links {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.audio-links a {
+    color: #1a2a6c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.audio-links a:hover {
+    color: #283d8a;
+    text-decoration: underline;
+}
+
+/* Go to top button */
+.go-top-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.go-top {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a2a6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.go-top:hover {
+    background-color: #283d8a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .genre-section {
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.3rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .genre-title {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,85 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.bucket-section {
+    margin-bottom: 3rem;
+}
+
+.bucket-section h2 {
+    color: #1a2a6c;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #1a2a6c;
+    font-family: 'Playfair Display', serif;
+}
+
+.bucket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.bucket-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.bucket-card:hover {
+    transform: translateY(-5px);
+}
+
+.bucket-card i {
+    font-size: 2.5rem;
+    color: #1a2a6c;
+    margin-bottom: 1rem;
+}
+
+.bucket-card h3 {
+    color: #1a2a6c;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.bucket-card p {
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.go-top-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.go-top {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a2a6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.go-top:hover {
+    background-color: #283d8a;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .bucket-grid {
+        grid-template-columns: 1fr;
+    }
+}
